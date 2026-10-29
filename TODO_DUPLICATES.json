@@ -1,0 +1,349 @@
+[
+  {
+    "text": "make a canonical logger that supports various backend",
+    "locations": [
+      {
+        "path": "luffy/verl/examples/split_placement/split_monkey_patch.py",
+        "line": 141
+      },
+      {
+        "path": "luffy/verl/verl/mix_src/mix_trainer.py",
+        "line": 599
+      },
+      {
+        "path": "luffy/verl/verl/mix_src/mix_trainer_acc_rebatch.py",
+        "line": 437
+      },
+      {
+        "path": "luffy/verl/verl/trainer/ppo/ray_trainer.py",
+        "line": 880
+      }
+    ]
+  },
+  {
+    "text": "(sgm): we can construct the position_ids_rmpad here",
+    "locations": [
+      {
+        "path": "luffy/verl/tests/model/test_transformer.py",
+        "line": 50
+      },
+      {
+        "path": "luffy/verl/tests/model/test_transformer.py",
+        "line": 111
+      },
+      {
+        "path": "luffy/verl/tests/model/test_transformers_ulysses.py",
+        "line": 81
+      },
+      {
+        "path": "luffy/verl/tests/model/test_transformers_ulysses.py",
+        "line": 159
+      }
+    ]
+  },
+  {
+    "text": "(sgm): support FSDP hybrid shard for larger model",
+    "locations": [
+      {
+        "path": "luffy/verl/verl/mix_src/mix_fsdp_worker.py",
+        "line": 54
+      },
+      {
+        "path": "luffy/verl/verl/mix_src/mix_fsdp_worker.py",
+        "line": 252
+      },
+      {
+        "path": "luffy/verl/verl/workers/fsdp_workers.py",
+        "line": 88
+      },
+      {
+        "path": "luffy/verl/verl/workers/fsdp_workers.py",
+        "line": 278
+      }
+    ]
+  },
+  {
+    "text": "add more optimizer args into config",
+    "locations": [
+      {
+        "path": "luffy/verl/verl/mix_src/mix_fsdp_worker.py",
+        "line": 226
+      },
+      {
+        "path": "luffy/verl/verl/workers/fsdp_workers.py",
+        "line": 252
+      },
+      {
+        "path": "luffy/verl/verl/workers/megatron_workers.py",
+        "line": 204
+      },
+      {
+        "path": "luffy/verl/verl/workers/megatron_workers.py",
+        "line": 507
+      },
+      {
+        "path": "luffy/verl/verl/workers/megatron_workers.py",
+        "line": 667
+      }
+    ]
+  },
+  {
+    "text": "here, we should return all metrics",
+    "locations": [
+      {
+        "path": "luffy/verl/verl/mix_src/mix_fsdp_worker.py",
+        "line": 391
+      },
+      {
+        "path": "luffy/verl/verl/workers/fsdp_workers.py",
+        "line": 416
+      },
+      {
+        "path": "luffy/verl/verl/workers/megatron_workers.py",
+        "line": 338
+      }
+    ]
+  },
+  {
+    "text": "we have to make sure the batch size is divisible by the dp size",
+    "locations": [
+      {
+        "path": "luffy/verl/verl/mix_src/mix_trainer.py",
+        "line": 293
+      },
+      {
+        "path": "luffy/verl/verl/mix_src/mix_trainer_acc_rebatch.py",
+        "line": 63
+      },
+      {
+        "path": "luffy/verl/verl/trainer/ppo/ray_trainer.py",
+        "line": 379
+      }
+    ]
+  },
+  {
+    "text": "(shengguangming): delete the unused args",
+    "locations": [
+      {
+        "path": "luffy/verl/verl/third_party/vllm/vllm_v_0_3_1/arg_utils.py",
+        "line": 64
+      },
+      {
+        "path": "luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/arg_utils.py",
+        "line": 109
+      },
+      {
+        "path": "luffy/verl/verl/third_party/vllm/vllm_v_0_5_4/arg_utils.py",
+        "line": 143
+      }
+    ]
+  },
+  {
+    "text": "(woosuk): Support fine-grained seeds (e.g., seed per request).",
+    "locations": [
+      {
+        "path": "luffy/verl/verl/third_party/vllm/vllm_v_0_3_1/arg_utils.py",
+        "line": 147
+      },
+      {
+        "path": "luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/arg_utils.py",
+        "line": 192
+      },
+      {
+        "path": "luffy/verl/verl/third_party/vllm/vllm_v_0_5_4/arg_utils.py",
+        "line": 226
+      }
+    ]
+  },
+  {
+    "text": "(sgm): we can optimize it by making the dataloader yield List[int] without padding.",
+    "locations": [
+      {
+        "path": "luffy/verl/verl/third_party/vllm/vllm_v_0_3_1/llm.py",
+        "line": 241
+      },
+      {
+        "path": "luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/llm.py",
+        "line": 272
+      },
+      {
+        "path": "luffy/verl/verl/third_party/vllm/vllm_v_0_5_4/llm.py",
+        "line": 205
+      }
+    ]
+  },
+  {
+    "text": "(shengguangming): can be optimzied by rewrite the Sampler._get_logprobs() logits",
+    "locations": [
+      {
+        "path": "luffy/verl/verl/third_party/vllm/vllm_v_0_3_1/llm.py",
+        "line": 257
+      },
+      {
+        "path": "luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/llm.py",
+        "line": 288
+      },
+      {
+        "path": "luffy/verl/verl/third_party/vllm/vllm_v_0_5_4/llm.py",
+        "line": 221
+      }
+    ]
+  },
+  {
+    "text": "(woosuk): Print more configs in debug mode.",
+    "locations": [
+      {
+        "path": "luffy/verl/verl/third_party/vllm/vllm_v_0_3_1/llm_engine_sp.py",
+        "line": 99
+      },
+      {
+        "path": "luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/llm_engine_sp.py",
+        "line": 128
+      },
+      {
+        "path": "luffy/verl/verl/third_party/vllm/vllm_v_0_5_4/llm_engine_sp.py",
+        "line": 143
+      }
+    ]
+  },
+  {
+    "text": "(shengguangming): maybe we can choose init here or from arguments",
+    "locations": [
+      {
+        "path": "luffy/verl/verl/third_party/vllm/vllm_v_0_3_1/llm_engine_sp.py",
+        "line": 112
+      },
+      {
+        "path": "luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/llm_engine_sp.py",
+        "line": 143
+      },
+      {
+        "path": "luffy/verl/verl/third_party/vllm/vllm_v_0_5_4/llm_engine_sp.py",
+        "line": 160
+      }
+    ]
+  },
+  {
+    "text": "(shengguangming): latest commit in vllm fix awq for this function and add load_weights",
+    "locations": [
+      {
+        "path": "luffy/verl/verl/third_party/vllm/vllm_v_0_3_1/model_loader.py",
+        "line": 67
+      },
+      {
+        "path": "luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/megatron_weight_loaders.py",
+        "line": 272
+      },
+      {
+        "path": "luffy/verl/verl/third_party/vllm/vllm_v_0_5_4/megatron_weight_loaders.py",
+        "line": 272
+      }
+    ]
+  },
+  {
+    "text": "(sgm): the lora tokenizer is also passed, but may be different",
+    "locations": [
+      {
+        "path": "luffy/verl/verl/third_party/vllm/vllm_v_0_3_1/tokenizer.py",
+        "line": 56
+      },
+      {
+        "path": "luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/tokenizer.py",
+        "line": 61
+      },
+      {
+        "path": "luffy/verl/verl/third_party/vllm/vllm_v_0_5_4/tokenizer.py",
+        "line": 61
+      }
+    ]
+  },
+  {
+    "text": "check megatron",
+    "locations": [
+      {
+        "path": "luffy/verl/verl/third_party/vllm/vllm_v_0_3_1/weight_loaders.py",
+        "line": 62
+      },
+      {
+        "path": "luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/megatron_weight_loaders.py",
+        "line": 67
+      },
+      {
+        "path": "luffy/verl/verl/third_party/vllm/vllm_v_0_5_4/megatron_weight_loaders.py",
+        "line": 67
+      }
+    ]
+  },
+  {
+    "text": "need to implement a general way to deal with prefix",
+    "locations": [
+      {
+        "path": "luffy/verl/verl/third_party/vllm/vllm_v_0_3_1/weight_loaders.py",
+        "line": 84
+      },
+      {
+        "path": "luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/megatron_weight_loaders.py",
+        "line": 254
+      },
+      {
+        "path": "luffy/verl/verl/third_party/vllm/vllm_v_0_5_4/megatron_weight_loaders.py",
+        "line": 254
+      }
+    ]
+  },
+  {
+    "text": "(sgm): This is a hack, we need to register the load_weight() func for each model in vllm",
+    "locations": [
+      {
+        "path": "luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/model_loader.py",
+        "line": 141
+      },
+      {
+        "path": "luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/model_loader.py",
+        "line": 226
+      },
+      {
+        "path": "luffy/verl/verl/third_party/vllm/vllm_v_0_5_4/model_loader.py",
+        "line": 152
+      },
+      {
+        "path": "luffy/verl/verl/third_party/vllm/vllm_v_0_5_4/model_loader.py",
+        "line": 239
+      }
+    ]
+  },
+  {
+    "text": "check why True is not work in Ray trainer",
+    "locations": [
+      {
+        "path": "luffy/verl/verl/third_party/vllm/vllm_v_0_5_4/parallel_state.py",
+        "line": 138
+      },
+      {
+        "path": "luffy/verl/verl/third_party/vllm/vllm_v_0_5_4/parallel_state.py",
+        "line": 165
+      },
+      {
+        "path": "luffy/verl/verl/third_party/vllm/vllm_v_0_5_4/parallel_state.py",
+        "line": 249
+      }
+    ]
+  },
+  {
+    "text": "we may use the new schedule instead",
+    "locations": [
+      {
+        "path": "luffy/verl/verl/workers/actor/megatron_actor.py",
+        "line": 301
+      },
+      {
+        "path": "luffy/verl/verl/workers/critic/megatron_critic.py",
+        "line": 176
+      },
+      {
+        "path": "luffy/verl/verl/workers/reward_model/megatron/reward_model.py",
+        "line": 233
+      }
+    ]
+  }
+]
